@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="456" thread-count="1" parallel="classes" >
+  <test thread-count="5" name="Chrome">
+  <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="test.VerifyHeaderOfMainPage"/>
+       <class name="test.Verify_Search_MobilePage"/>
+        <class name="test.verifyBooksAdvanceSearch"/>
+    </classes>
+  </test> <!-- demo -->
+  
+  <test thread-count="1" name="Edge">
+  <parameter name="browser" value="Edge"/>
+    <classes>
+      <class name="test.VerifyHeaderOfMainPage"/>
+       <class name="test.Verify_Search_MobilePage"/>
+        <class name="test.verifyBooksAdvanceSearch"/>
+    </classes>
+  </test> <!-- demo -->
+</suite> <!-- 456 -->
